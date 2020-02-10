@@ -71,6 +71,7 @@ h1 {
 img {
     max-width: 100%;
     padding: 5%;
+    padding-bottom: 1%;
 
 }
 figure {
@@ -78,6 +79,7 @@ figure {
 }
 figcaption {
     padding-left: 5%;
+    font-size: 80%;
 }
 h5 {
     margin-bottom: 0px;
