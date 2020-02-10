@@ -10,6 +10,7 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
     font-weight: 300;
+    
 }
 /* .grid is for an outer div, limits max-width of the entire page */
 .grid {
@@ -60,4 +61,8 @@ body {
 }
 h1 {
     font-weight: 100;
+}
+img {
+    max-width: 100%;
+    padding: 5px;
 }
