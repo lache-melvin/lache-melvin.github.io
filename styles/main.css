@@ -138,6 +138,9 @@ p {
     padding: 10%;
 
 }
+#slack-name {
+    padding-left: 4%;
+}
 
 /* Navigation Bar */
 .navbar {
