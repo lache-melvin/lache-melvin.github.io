@@ -18,12 +18,14 @@ body {
     background-color: rgb(253, 234, 209);
     padding-bottom: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0% 1.5%;
 }
 .col-1 {
     width: 8.33%;
@@ -71,7 +73,6 @@ img {
     max-width: 100%;
     padding: 5%;
     padding-bottom: 1%;
-
 }
 figure {
     margin: 0;
@@ -87,17 +88,16 @@ h5 {
     font-weight: 100;
     padding-left: 1.67%;
 }
-p {
-    padding-right: 2.5%;
+
+.waiting {
+    max-width: 100%;
 }
 
 /* Navigation Bar */
 .navbar {
     overflow: hidden;
     background-color: white;
-    border: 15px solid rgb(253, 234, 209);
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 8px;
 }
 .navbar a {
     float: left;
