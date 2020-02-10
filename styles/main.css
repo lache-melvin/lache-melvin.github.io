@@ -1,6 +1,4 @@
-* {
-    border: 1px solid red !important;
-}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,13 +8,16 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
     font-weight: 300;
-    
+    background-image: url(../images/paw-vector.jpg);
 }
 /* .grid is for an outer div, limits max-width of the entire page */
 .grid {
     margin: 0 auto; /* centers content */
     max-width: 1500px;
     width: 100%;
+    background-color: rgb(253, 234, 209);
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
 .row {
     width: 100%;
@@ -64,5 +65,9 @@ h1 {
 }
 img {
     max-width: 100%;
-    padding: 5px;
+    padding: 5%;
+
+}
+figure {
+    margin: 0;
 }
