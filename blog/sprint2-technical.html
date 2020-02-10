@@ -9,11 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,500&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="top">
     <div class="grid">
       <header>
         <div class="row">
-          <h1 class="col-12">Laché's Blog - Feat. Dog(s)</h1>
+          <div class="col-7"><h1>Laché's Blog - Feat. Dog(s)</p></div>
+          <div class="col-3"></div>
+            <div class="col-2">
+              <img class="title-pup" src="../images/title-pup.png" alt="">
+            </div>
         </div>
         <div class="row">
           <div class="navbar col-12">
@@ -48,45 +52,83 @@
       </div>
       <div class="row">
         <p class="col-8">We start out with an element in HTML - for this example, I'll use a <strong>&lt;span&gt;</strong> (entirely because that's close to spaniel, and I wanted to make that pun). Seeing as a <strong>&lt;span&gt;</strong>(iel) is a container for just a small amount of content, it is probably nested inside of some <strong>&lt;p&gt;</strong> tags. So here's my <strong>&lt;span&gt;</strong> within a paragraph, and naturally, I've given it a class of <strong>spaniel</strong>. Within CSS, I can now give this <strong>spaniel</strong> class a display property.</p>
-        <img class="col-4 dumb-img" src="../images/t2/html.png" alt="HTML code of a paragraph about spaniels, reading: 'A spaniel is a type of gun dog. Spaniels were especially bred to flush game out of denser brush. By the late 17th century, spaniels had been specialized into water and land breeds. The extinct English Water Spaniel was used to retrieve water fowl shot down with arrows.' A span surrounds the words 'late 17th century'.">
+        <div class="col-4">
+          <img class="expl-img" src="../images/t2/html.png" alt="HTML code of a paragraph about spaniels, reading: 'A spaniel is a type of gun dog. Spaniels were especially bred to flush game out of denser brush. By the late 17th century, spaniels had been specialized into water and land breeds. The extinct English Water Spaniel was used to retrieve water fowl shot down with arrows.' A span surrounds the words 'English Water Spaniel'.">
+        </div>
       </div>
       <div class="row">
         <h3 class="col-12 sub-heading">display: inline;</h3>
       </div>
       <div class="row">
-        <p class="col-12">explain</p>
+        <p class="col-12">Once I set the display for <strong>.spaniel</strong> to <strong>inline</strong>, I set my text colour to white and the background to brown. I've added some padding (extra brown) and some margin (extra surrounding white space). Inline display will size itself to cover the element it is set to - in this case our span. However, we can't set a fixed width or height for inline display - well, you could try, but it would be an exercise in futily, so I wouldn't bother :)</p>
       </div>
       <div class="row">
-        <p class="col-4">a few words?</p>
-        <img class="col-4" src="" alt="">
-        <img class="col-4" src="" alt="">
+        <div class="col-3">
+          <img class="expl-img" src="../images/inline-css.png" alt="Screenshot of explained CSS.">
+        </div>
+        <div class="col-5">
+          <img class="expl-img" src="../images/inline.png" alt="Screenshot of how explained display: inline; displays on a webpage.">
+        </div>
+        <p class="col-4 explanation">Funnily enough, inline display prioritises keeping the content of our span in line with the rest of the text. Therefore, the padding I added is overlapping the above content and sits behind content below (due to stack order), and my margin only functions horizontallly.</p>
       </div>
+      <br>
       <div class="row">
-        <p class="col-6">So much blog, so little dog... here's a little fuzzball to keep you going :)</p>
-        <img class="col-6" src="" alt="">
+        <p class="col-6">So much blog, so little dog... here's a little fuzzball to keep you going! Don't worry, this one's educational - that's the exticnt English Water Spaniel for reference :)</p>
+        <div class="col-3">
+          <img class="dog-span" src="../images/eng-water-spaniel.jpg" alt="english water spaniel painting">
+        </div>
+        <div class="col-3"></div>
       </div>
+      <br>
       <div class="row">
         <h3 class="col-12 sub-heading">display: block;</h3>
       </div>
       <div class="row">
-        <p class="col-12">explain</p>
+        <p class="col-12">As you might have guessed, <strong>display: block;</strong> is the opposite of <strong>display: inline;</strong> - instead of keeping the content of the span in line with the rest of the text, <strong>block</strong> sets it on a new line - it gives the content it's own block! Margin and padding are observed in both dimensions, and we can now set a fixed height and width. Note that the padding and margin are added to the edge of my specified height and width, not around the text.</p>
       </div>
       <div class="row">
-        <p class="col-4">a few words?</p>
-        <img class="col-4" src="" alt="">
-        <img class="col-4" src="" alt="">
+        <p class="col-4">Because I have a given the span a fixed height and width, the contents now overflow. For my example, this is inconvenient, but if you're using this display property on a larger piece of content, having set dimensions can be useful for how it displays - add an <strong>overflow: hidden;</strong> property and a scroll bar to manage the excess!</p>
+        <div class="col-3">
+          <img class="expl-img" src="../images/block-css.png" alt="Screenshot of explained CSS.">
+        </div>
+        <div class="col-5">
+          <img class="expl-img" src="../images/block.png" alt="Screenshot of how explained display: block; displays on a webpage.">
+        </div>
       </div><div class="row">
         <h3 class="col-12 sub-heading">display: inline-block;</h3>
       </div>
       <div class="row">
-        <p class="col-12">explain</p>
+        <p class="col-12">With <strong>display: inline-block;</strong> we get the best of both worlds (queue Hannah Montana please). The contents of my span stays in line with the rest of my paragraph, but I get to set width and height, and my margins and padding function in all directions.</p>
       </div>
       <div class="row">
-        <p class="col-4">a few words?</p>
-        <img class="col-4" src="" alt="">
-        <img class="col-4" src="" alt="">
+        <div class="col-3">
+          <img class="expl-img" src="../images/inline-block-css.png" alt="Screenshot of explained CSS.">
+        </div>
+        <div class="col-4">
+          <img class="expl-img" src="../images/inline-block.png" alt="Screenshot of how explained display: inline-block; displays on a webpage.">
+        </div>
+        <p class="col-5">We can see that the content of the span tries to fit within my given dimensions, but still overflows, which can be dealt with as explained above. Also note that though the span is in line with the rest of the paragraph, the margins I set are pushing the lines of the paragraph apart.</p>
       </div>
-      <div class="row">tehe tada</div>
+      <div class="row">
+        <h5 class="col-12 youre-awesome">You made it! You deserve these extra spaniels &lt;3</h5>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="index-img" src="../images/t2/spaniel-1.jpg" alt="Black and white, very good boi.">
+        </div>
+        <div class="col-4">
+          <img class="index-img" src="../images/t2/spaniel-2.jpg" alt="A handsome caramelly lass stands poised on some grass.">
+        </div>
+        <div class="col-4">
+            <img class="index-img" src="../images/t2/spaniel-3.1.png" alt="Smol brown and white spaniel puppy runs through the grass towards camera. Tiny bundle of wonderful.">
+        </div>
+      </div>
+      <div class="row">
+        <div class="navbar col-12">
+          <a href="#top">Back to top</a>
+          <a href="../index.html">Home</a>
+        </div>
+      </div> 
     </div>
   </body>
 </html>
