@@ -92,7 +92,15 @@ h5 {
 .waiting {
     max-width: 100%;
 }
-
+.sniffer {
+    max-width: 50%;
+}
+.align-right {
+    text-align: right;
+}
+.contact {
+    padding-top: 2%;
+}
 /* Navigation Bar */
 .navbar {
     overflow: hidden;
