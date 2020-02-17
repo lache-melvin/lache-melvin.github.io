@@ -126,7 +126,27 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <p>How to access the data</p>
+          <p>Both arrays and objects are types of special variables that contain collections of information, rather than just one piece of data. However, arrays are an (ordered) list of data points stored in a single variable, while an object should representation a 'thing' that has various characterisitics (known as properties).</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="image" src="../images/t3/array.png" alt="an array of tree breeds as strings, with an object describing the characterisitics of the Magnolia">
+        </div>
+        <div class="col-4">
+          <p>On the left is an array, which contains a list of information inside the single variable <strong>treeBreeds</strong>.</p> 
+          <p>On the right is an object, which contains information about the many properties of <strong>myTree</strong>.</p>
+          <p>Note that I can have an object within my array, and an array within my object (and on and on...)</p>
+        </div>
+        <div class="col-4">
+          <img class="image" src="../images/t3/object.png" alt="an object describing the characterisitics of myTree">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Data in arrays is accessed with zero-indexing, which means that each piece of data in the array is numbered, starting from 0. As shown in the image, <strong>treeBreeds[1]</strong> correlates to 'Blue Gum'.</p>
+          <p>Meanwhile, objects are accessed by calling the <strong>key</strong> for the property we want the information from, which can be done using either dot notation or bracket notation. Note that the dot notation was simply <strong>myTree.heightInMeters</strong>, but when using bracket notation you must put the property name in quote marks, i.e. <strong>myTree['breed']</strong>.</p>
+          <p>We can put this together to call the information from within the nested objects/arrays. Returning <strong>treeBreeds[2].Magnolia.talents</strong> will return 'pretty flowers'.</p>
         </div>
       </div>
       <div class="row">
