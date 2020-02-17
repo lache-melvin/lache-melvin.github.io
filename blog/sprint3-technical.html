@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sprint 3 Technical Blog</title>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/log.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,500&display=swap" rel="stylesheet">
   </head>
 
@@ -13,10 +13,10 @@
     <div class="grid">
       <header id="top">
         <div class="row">
-          <div class="col-7"><h1>Laché's Dog Blog</h1></div>
-          <div class="col-3"></div>
-            <div class="col-2">
-              <img class="title-pup" src="../images/title-pup.png" alt="black and white puppy cartoon">
+          <div class="col-7"><h1>Laché's Log Blog</h1></div>
+       
+            <div class="col-5">
+              <img class="title-log" src="../images/t3/log-cabin-cartoons-18.jpg" alt="cartoon log with one cute little sprout on a white background">
             </div>
         </div>
         <div class="row">
@@ -30,6 +30,8 @@
                 <a href="sprint1-technical.html">Sprint 1</a>
                 <a href="sprint2-technical.html">Sprint 2</a>
                 <a href="sprint3-technical.html">Sprint 3</a>
+                <a href="sprint4-technical.html">Sprint 4</a>
+                <a href="sprint5-technical.html">Sprint 5</a>
               </div>
             </div>
             <div class="dropdown">
@@ -40,6 +42,8 @@
                 <a href="sprint1-cultural.html">Sprint 1</a>
                 <a href="sprint2-cultural.html">Sprint 2</a>
                 <a href="sprint3-cultural.html">Sprint 3</a>
+                <a href="sprint4-cultural.html">Sprint 4</a>
+                <a href="sprint5-cultural.html">Sprint 5</a>
               </div>
             </div>
             <a href="../contact.html">Contact</a>
@@ -47,9 +51,124 @@
         </div> 
       </header>
       <div class="row">
-        <h2 class="col-2">Content Pending</h2>
-        <img src="../images/waiting-puppy.png" alt="A cute pupster waiting, just like you." class="col-10">
+        <div class="col-12">
+          <h2 class="heading">JavaScript and the DOM</h2>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="sub-heading">HTML and CSS</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <p>If we were to view the relationship between HTML and CSS as a tree, HTML would be the parts that make up the tree, in their most basic form. A trunk, some branches, roots, leaves and flowers. CSS arranges these parts and alters their appearance. It adds colour to the flowers so bees can find them easier, arranges the leaves for maximum sunlight exposure, determines the patterns in the bark. HTML gives us the bits and pieces, and CSS gives us the ability to style them, both for practicality and aesthetic.</p>
+        </div>
+        <div class="col-3">
+          <img class="twee" src="../images/t3/twee-twee-123.jpg" alt="a cartoon tree with little orange flowers">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="sub-heading">Control Flow and Loops</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>It's the middle of winter, but your friend somehow convinced you to go camping. It was perhaps the wrong idea. Your cold little toes are rapidly losing feeling and you're in desperate need of some steamy tomato soup. This calls for fire. You find a nice place to set up camp, and there's a fallen tree nearby that you could possibly use as firewood. Let's decide the course of action.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="image" src="../images/t3/control-flow.png" alt="if-else control flow deciding how to start the fire">
+        </div>
+        <div class="col-8">
+          <p>A control flow allows us to decide on a single course of action depending on several different factors. In this example, we will only fall back on hunting for kindling if we have no way to chop up the fallen tree.</p>
+          <br>
+          <p>Meanwhile, loops create instructions to repeat the same set of actions several times in a row. In JavaScript, we can choose between <strong>for</strong> loops, <strong>while</strong> loops and <strong>do... while</strong> loops. Here is how these loops could work in our camping situation.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="image" src="../images/t3/for-loop.png" alt="A for loop placing a log on the fire every hour for 8 hours.">
+        </div>
+        <div class="col-4">
+          <img class="image" src="../images/t3/while-loop.png" alt="A while loop placing a log on the fire every hour while there is still wood left.">
+        </div>
+        <div class="col-4">
+          <img class="image" src="../images/t3/do-while-loop.png" alt="A do while loop placing a log on the fire, waiting an hour, then checking if there is firewood left before repeating.">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="sub-heading">The DOM</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>DOM stands for Document Object Model, which represents each component of the HTML document as an object so that JavaScript, an object-oriented language, can interact with it. Luckily for me, the DOM is pretty much a tree diagram, and thus my thematic consistency for this week is preserved.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <p>In reality, the DOM is crazy complex and contains an object (called a node) for every tiny piece of information in the HTML document. It contains more information than we could every really need, but this simplified version gives us an idea of what it looks like.</p>
+          <p>Every element is a child, grandchild, great-grandchild... etc. of the document object. An element can have any number of children, but only ever has one parent (finally, the asexual representation we all needed.)</p>
+          <p>One way for JavaScript to access an element in the DOM is through IDs. In my HTML file, I could give an <strong>img</strong> element an id of <strong>tree</strong>, and then access it in JavaScript with <strong>document.getElementById('tree')</strong>. From there I can manipulate or make my image interactive.</p>
+        </div>
+        <div class="col-5">
+          <img class="image" src="../images/t3/dom.gif" alt="a simplified diagram of a DOM">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="sub-heading">Arrays vs. Objects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Both arrays and objects are types of special variables that contain collections of information, rather than just one piece of data. However, arrays are an (ordered) list of data points stored in a single variable, while an object should representation a 'thing' that has various characterisitics (known as properties).</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="image" src="../images/t3/array.png" alt="an array of tree breeds as strings, with an object describing the characterisitics of the Magnolia">
+        </div>
+        <div class="col-4">
+          <p>On the left is an array, which contains a list of information inside the single variable <strong>treeBreeds</strong>.</p> 
+          <p>On the right is an object, which contains information about the many properties of <strong>myTree</strong>.</p>
+          <p>Note that I can have an object within my array, and an array within my object (and on and on...)</p>
+        </div>
+        <div class="col-4">
+          <img class="image" src="../images/t3/object.png" alt="an object describing the characterisitics of myTree">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Data in arrays is accessed with zero-indexing, which means that each piece of data in the array is numbered, starting from 0. As shown in the image, <strong>treeBreeds[1]</strong> correlates to 'Blue Gum'.</p>
+          <p>Meanwhile, objects are accessed by calling the <strong>key</strong> for the property we want the information from, which can be done using either dot notation or bracket notation. Note that the dot notation was simply <strong>myTree.heightInMeters</strong>, but when using bracket notation you must put the property name in quote marks, i.e. <strong>myTree['breed']</strong>.</p>
+          <p>We can put this together to call the information from within the nested objects/arrays. Returning <strong>treeBreeds[2].Magnolia.talents</strong> will return 'pretty flowers' from my array.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="sub-heading">Functions</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Functions are used for code we wish to repeat. We create the code for a specific task, assign that code to a function name (adding optional parameters), and then we call that function name (with arguments if necessary) whenever we want to use that set of code. This saves us from repeating code unnecessarily.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <p>This function will test if someone <strong>isATreehugger</strong> and return a statement about them when passed the person's <strong>Name</strong> and if they <strong>careAboutClimateChange.</strong> Therefore, calling <strong>isATreehugger(true, Laché)</strong> would return "Yes, Laché is a treehugger, and should be proud of it."</p>
+          <p>(sidenote: Laché is also a peoplehugger - please beware.)</p>
+        </div>
+        <div class="col-5">
+          <img class="image" src="../images/t3/function.png" alt="">
+        </div>
+      </div>
+
       <div class="row">
         <div class="navbar col-12">
           <a href="#top">Back to top</a>
