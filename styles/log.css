@@ -8,18 +8,19 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
     font-weight: 300;
-    background-image: url(../images/c3/seamless-cogs.jpg);
+    background-image: url(../images/t3/wood-seamless.jpg);
 }
 /* .grid is for an outer div, limits max-width of the entire page */
 .grid {
     margin: 0 auto; /* centers content */
     max-width: 1200px;
     width: 100%;
-    background-color: rgb(205, 210, 214);
+    background-color: rgb(231, 200, 165);
     padding-bottom: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    box-shadow: rgb(173, 151, 125) 2px 2px 2px 2px;
 }
 .row {
     width: 100%;
@@ -103,7 +104,7 @@ p {
     height: auto;
     margin-top: 18px;
     margin-bottom: 18px;
-    border: 2px grey solid;
+    border: 4px white solid;
     border-radius: 4px;
     float: right;
 }
