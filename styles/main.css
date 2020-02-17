@@ -135,9 +135,11 @@ p {
     height: auto;
 }
 .title-pup {
-    max-width: 100%;
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    padding: 10%;
+    padding: 3%;
+    float: right;
 
 }
 #slack-name {
