@@ -90,7 +90,6 @@ h1 {
     height: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    border-radius: 4px;
 }
 
 p {
@@ -106,6 +105,13 @@ p {
     margin-bottom: 18px;
     border: 4px white solid;
     border-radius: 4px;
+    float: right;
+}
+.twee {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
     float: right;
 }
 
