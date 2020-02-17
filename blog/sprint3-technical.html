@@ -90,13 +90,13 @@
       </div>
       <div class="row">
         <div class="col-4">
-          <img class="image" src="../images/t3/for-loop.png" alt="">
+          <img class="image" src="../images/t3/for-loop.png" alt="A for loop placing a log on the fire every hour for 8 hours.">
         </div>
         <div class="col-4">
-          <img class="image" src="../images/t3/while-loop.png" alt="">
+          <img class="image" src="../images/t3/while-loop.png" alt="A while loop placing a log on the fire every hour while there is still wood left.">
         </div>
         <div class="col-4">
-          <img class="image" src="../images/t3/do-while-loop.png" alt="">
+          <img class="image" src="../images/t3/do-while-loop.png" alt="A do while loop placing a log on the fire, waiting an hour, then checking if there is firewood left before repeating.">
         </div>
       </div>
       <div class="row">
@@ -106,7 +106,17 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <p>what it is and an example interaction</p>
+          <p>DOM stands for Document Object Model, which represents each component of the HTML document as an object so that JavaScript, an object-oriented language, can interact with it. Luckily for me, the DOM is pretty much a tree diagram, and thus my thematic consistency for this week is preserved.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7">
+          <p>In reality, the DOM is crazy complex and contains an object (called a node) for every tiny piece of information in the HTML document. It contains more information than we could every really need, but this simplified version gives us an idea of what it looks like.</p>
+          <p>Every element is a child, grandchild, great-grandchild... etc. of the document object. An element can have any number of children, but only ever has one parent (finally, the asexual representation we all needed.)</p>
+          <p>One way for JavaScript to access an element in the DOM is through IDs. In my HTML file, I could give an <strong>img</strong> element an id of <strong>tree</strong>, and then access it in JavaScript with <strong>document.getElementById('tree')</strong>. From there I can manipulate or make my image interactive.</p>
+        </div>
+        <div class="col-5">
+          <img class="image" src="../images/t3/dom.gif" alt="a simplified diagram of a DOM">
         </div>
       </div>
       <div class="row">
