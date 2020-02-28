@@ -15,7 +15,7 @@ body {
     margin: 0 auto; /* centers content */
     max-width: 1200px;
     width: 100%;
-    background-color: rgb(202, 213, 221);
+    background-color: rgb(185, 196, 204);
     padding-bottom: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -84,15 +84,27 @@ h1 {
 
 .align-right {
     text-align: right;
+    float: right;
 }
 .image {
     max-width: 100%;
     height: auto;
     margin-top: 1%;
     margin-bottom: 1%;
-    padding-left: 5px;
-    padding-right: 5px;
-    max-height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.uwu {
+    margin-bottom: 0px;
+    font-size: 150%;
+    font-weight: 100;
+    padding-left: 10%;
+}
+
+.akl {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .fig-1 {
